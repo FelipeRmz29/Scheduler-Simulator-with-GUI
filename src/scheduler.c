@@ -1,7 +1,8 @@
 #include "../include/scheduler.h"
 #include <stdio.h>
 
-int main() {
+// Función para probar FIFO desde la GUI o tests
+void run_fifo_example() {
     process_t processes[] = {
         {1, 0, 5, 1, 5, -1, -1, -1, -1, -1},
         {2, 1, 3, 2, 3, -1, -1, -1, -1, -1},
@@ -24,6 +25,4 @@ int main() {
     printf("CPU Utilization: %.2f%%\n", metrics.cpu_utilization);
     printf("Throughput: %.2f processes/unit time\n", metrics.throughput);
     printf("Fairness Index: %.2f\n", metrics.fairness_index);
-
-    return 0;
 }

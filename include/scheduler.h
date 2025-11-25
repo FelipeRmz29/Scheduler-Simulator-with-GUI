@@ -45,5 +45,5 @@ void schedule_rr(process_t *processes, int n, int quantum, timeline_event_t *tim
 void schedule_mlfq(process_t *processes, int n, mlfq_config_t *config, timeline_event_t *timeline, int *timeline_size);
 void calculate_metrics(process_t *processes, int n, int total_time, metrics_t *metrics);
 void generate_report(const char *filename, process_t *processes, int n, metrics_t *metrics);
-
+void run_fifo_example();
 #endif
